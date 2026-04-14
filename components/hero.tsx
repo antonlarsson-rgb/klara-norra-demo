@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative bg-white">
@@ -42,14 +44,15 @@ export default function Hero() {
               <path d="M0 160 V40 A120 120 0 0 1 120 160 Z" fill="var(--color-brand)" />
             </svg>
           </div>
-          <div
-            className="relative min-h-[360px] bg-cover bg-center md:min-h-[560px]"
-            style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80')",
-            }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-brand/20 to-transparent md:hidden" />
+          <div className="relative min-h-[360px] md:min-h-[560px]">
+            <Image
+              src="/hero.jpg"
+              alt="Elever på Klara Teoretiska Gymnasium Stockholm Norra"
+              fill
+              priority
+              sizes="(min-width: 768px) 55vw, 100vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
