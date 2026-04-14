@@ -63,7 +63,7 @@ export default function News() {
         </div>
         <a
           href="#nyheter"
-          className="inline-flex w-fit items-center rounded-full border border-brand/20 bg-white px-6 py-3 text-sm font-medium text-brand hover:bg-brand hover:text-white transition-colors"
+          className="inline-flex w-fit items-center rounded-full border border-brand/20 bg-white px-6 py-3 text-sm font-semibold text-brand hover:bg-brand-red hover:border-brand-red hover:text-white transition-colors"
         >
           Alla nyheter →
         </a>

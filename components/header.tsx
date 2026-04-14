@@ -9,27 +9,55 @@ const nav = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-border">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="inline-block h-8 w-8 rounded-full bg-brand" aria-hidden />
-          <span className="text-lg font-semibold tracking-tight text-brand">
-            KLARA <span className="text-muted-foreground font-normal">Stockholm Norra</span>
+    <header className="sticky top-0 z-40 bg-white border-b border-border">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-8 py-5">
+        <Link href="/" className="flex flex-col leading-none">
+          <span className="text-[2rem] font-extrabold tracking-tight text-brand-red">
+            KLARA
+          </span>
+          <span className="mt-0.5 text-[0.55rem] font-semibold tracking-[0.18em] text-brand-dark">
+            TEORETISKA GYMNASIUM
           </span>
         </Link>
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground">
+        <nav className="hidden md:flex items-center gap-10 text-[0.95rem] font-medium text-foreground">
           {nav.map((item) => (
-            <a key={item.href} href={item.href} className="hover:text-brand transition-colors">
+            <a
+              key={item.href}
+              href={item.href}
+              className="hover:text-brand-red transition-colors"
+            >
               {item.label}
             </a>
           ))}
         </nav>
-        <a
-          href="#oppet-hus"
-          className="hidden md:inline-flex items-center rounded-full bg-brand px-5 py-2.5 text-sm font-medium text-white hover:bg-brand/90 transition-colors"
-        >
-          Besök öppet hus
-        </a>
+        <div className="flex items-center gap-6">
+          <a
+            href="#oppet-hus"
+            className="hidden md:inline-flex items-center rounded-full bg-brand-red px-6 py-3 text-sm font-semibold text-white hover:bg-brand-red-hover transition-colors"
+          >
+            Besök Öppet hus
+          </a>
+          <button
+            type="button"
+            aria-label="Sök"
+            className="hidden md:flex flex-col items-center gap-0.5 text-xs text-foreground hover:text-brand-red transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-5 w-5"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <span>Sök</span>
+          </button>
+        </div>
       </div>
     </header>
   );

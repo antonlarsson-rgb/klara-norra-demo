@@ -37,7 +37,7 @@ export default function Programs() {
           </div>
           <a
             href="#program"
-            className="inline-flex w-fit items-center rounded-full bg-white px-6 py-3 text-sm font-medium text-brand hover:bg-brand-accent transition-colors"
+            className="inline-flex w-fit items-center rounded-full bg-brand-red px-6 py-3 text-sm font-semibold text-white hover:bg-brand-red-hover transition-colors"
           >
             Till våra program →
           </a>

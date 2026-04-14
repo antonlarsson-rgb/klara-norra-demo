@@ -3,9 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #1a1a1a;
-  --brand: #0b1f3a;
+  --brand: #0f4a48;
+  --brand-dark: #093633;
+  --brand-red: #d63763;
+  --brand-red-hover: #c02a56;
   --brand-accent: #f4c430;
-  --muted: #f4f4f3;
+  --muted: #f5f3ef;
   --muted-foreground: #5b5b5b;
   --border: #e6e6e6;
 }
@@ -14,6 +17,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-red: var(--brand-red);
+  --color-brand-red-hover: var(--brand-red-hover);
   --color-brand-accent: var(--brand-accent);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
