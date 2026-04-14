@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const nav = [
@@ -11,13 +12,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-border">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-8 py-5">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="text-[2rem] font-extrabold tracking-tight text-brand-red">
-            KLARA
-          </span>
-          <span className="mt-0.5 text-[0.55rem] font-semibold tracking-[0.18em] text-brand-dark">
-            TEORETISKA GYMNASIUM
-          </span>
+        <Link href="/" className="flex items-center" aria-label="Klara Teoretiska Gymnasium">
+          <Image
+            src="/klara-logo.svg"
+            alt="Klara Teoretiska Gymnasium"
+            width={140}
+            height={56}
+            priority
+            className="h-12 w-auto"
+          />
         </Link>
         <nav className="hidden md:flex items-center gap-10 text-[0.95rem] font-medium text-foreground">
           {nav.map((item) => (
