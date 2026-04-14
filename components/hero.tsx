@@ -24,13 +24,13 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#oppet-hus"
-                className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand hover:bg-brand-accent transition-colors"
+                className="inline-flex items-center rounded-full bg-brand-red px-6 py-3 text-sm font-semibold text-white hover:bg-brand-red-hover transition-colors"
               >
                 Besök Öppet hus
               </a>
               <a
                 href="#program"
-                className="inline-flex items-center rounded-full border border-white/70 px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-brand transition-colors"
+                className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-dark hover:bg-brand-accent transition-colors"
               >
                 Till våra program
               </a>
